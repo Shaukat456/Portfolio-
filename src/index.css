@@ -3,6 +3,10 @@
     margin: 0; pad: 0;
  
 }
+body{
+    background: url('dark.jpg') no-repeat center/cover;
+    color: wheat;
+}
 
 html{
     scroll-behavior: smooth;
