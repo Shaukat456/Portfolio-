@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0; pad: 0;
+ 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER COMPONENT */
+
+.navbar{
+    /* background-color: cadetblue; */
+    height: 4rem;
+    justify-content: center;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row;
+
+}
+.navbar li{
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin: 1.4% 4%;
+}
+.navbar li:nth-child(1){
+    margin: 1.4% 10%;
+}
+
+
+/* Intro */
+
+.intro h2 {
+    font-family: 'Audiowide', cursive;
+  text-shadow:-22px 18px 9px grey;
+        font-size: 4.3rem;
+    transform: skewX(23deg) skewY(6deg);
+transition: all .5s ease;
+    font-weight: bold;
+    margin-top: 11rem;
+    margin-left: 11rem;
+    animation-name: h2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+    @keyframes h2 {
+        10%{
+            /* margin-left: 500%; */
+            opacity: .1;
+            transform: scale(1.7) skewX(70deg) skewY(79deg) ;
+            transition: all .5s ease;
+            
+        }       
+        50%{
+          
+            opacity: 1;
+            transform: scale(1)  skewX(8deg) skewY(1deg);
+            transition: all .5s ease;
+
+        }
+        100%{
+          
+            opacity: 1;
+            transform: scale(1)  skewX(23deg) skewY(6deg);
+            transition: all .5s ease;
+
+        }
+    }
+
+
+.intro p {
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    transform: skewX(21deg) skewY(4deg);
+    text-shadow:-22px 18px 6px grey;
+    margin-left: 15rem;
+
+}
+
+.cv-btn {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #11381c;
+    outline: none;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    color: #fff;
+    cursor: pointer;
+
+    margin-left: 11rem;
+  
+
+}
+.work-btn {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 3px 3px 3px 3px;
+    outline: none;
+    transition: all .6s ease;
+    /* margin: 2px 2px 2px 2px; */
+    margin-left: 11rem;
+    cursor: pointer;
+
+    animation-name: workbtn;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+    @keyframes workbtn {
+        from{
+            /* opacity: ; */
+            /* transform: scale(1)  ; */
+            margin-left: -774%;
+            /* margin-right: 60%; */
+            transition: all .5s ease;
+            
+        }       
+        to{
+            /* opacity: 1; */
+            /* transform: scale(1)  skewX(23deg) skewY(6deg); */
+            transition: all .5s ease;
+            /* margin: 2px 2px 2px 2px; */
+            margin-left: 11rem;
+
+
+        }
+    }
+
+
+
+
+
+
+.work-btn:hover {
+    background-color: #11381c;
+    outline: none;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    color: #fff;
+    transition: all .6s ease;
+
+
+}
