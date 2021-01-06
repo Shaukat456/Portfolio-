@@ -3,10 +3,37 @@
     margin: 0; pad: 0;
  
 }
-body{
-    background: url('dark.jpg') no-repeat center/cover;
-    color: wheat;
+body::before{  
+   content: '';
+  z-index: -1;
+    animation-name: b;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    
+    
 }
+@keyframes b{
+    50%{
+        z-index: 55;
+        transition: all .6s ease;
+        background: rgb(111, 222,green);
+    }
+    80%{
+        transform: skew(6deg);
+        transition: all .6s ease;
+
+    }
+    100%{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        animation-name: b;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+    }
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -15,9 +42,13 @@ html{
 /* HEADER COMPONENT */
 
 .navbar{
+    display: flex;
     /* background-color: cadetblue; */
-    height: 4rem;
+    /* height: 4rem; */
     justify-content: center;
+    position: absolute;
+    position: fixed;
+    margin-top: -30px;
 
 }
 .navbar ul{
@@ -84,7 +115,7 @@ transition: all .5s ease;
     font-family: 'Poppins', sans-serif;
     font-size: 1.7rem;
     transform: skewX(21deg) skewY(4deg);
-    text-shadow:-22px 18px 6px grey;
+    /* text-shadow:-22px 18px 6px grey; */
     margin-left: 15rem;
 
 }
@@ -153,4 +184,89 @@ transition: all .5s ease;
     transition: all .6s ease;
 
 
+}
+
+/* Progress section */
+.progress-section {
+    margin-top: 8rem;
+    color: rgb(255, 255, 255);
+    background-color:#343b46;
+    transform: skew(90deg) ;
+    /* box-shadow:20px 20px 10px grey; */
+
+    animation-name: progressection;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    
+
+}
+@keyframes progressection{
+    20%{
+        opacity: .1;
+        transform: scale(.1);
+        transition: all .5s ease;
+
+    }
+    40%{
+        transform: scale(.3);
+        /* margin-right: 599%; */
+        opacity: .3;
+        transition: all .5s ease;
+
+        /* margin-left: 100px; */
+    }
+    
+    90%{
+        opacity: .5;
+        transform: scale(.5);
+        /* margin-left: 400%; */
+        transform: skew(180deg);
+        /* margin-left: 400px; */
+        transition: all .5s ease;
+    
+    }       
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: skew(90deg);
+        transition: all .5s ease;
+        /* margin-left: 0px; */
+
+
+    }
+
+}
+.progress {
+    height:0.4rem!important;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #000;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    
+   
+}
+ h5{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+.progress{
+    /* display: inline; */
+    margin-top: 4%;
+    background-color: transparent;
+        }
+.picture{
+    height: 35rem;
+    margin-left: 7%;
+}
+.myself{
+    margin-top: -44%;
+    margin-left: 40%;
 }

@@ -3,6 +3,7 @@ import './index.css'
 import Header from './Header'
 import Intro from './Intro'
 import Progress from './Progress'
+import Zoom from 'react-reveal/Zoom';
 
 const App = () => {
     return (
@@ -10,7 +11,9 @@ const App = () => {
      <Header/>
      <Intro/>
      <Progress/>
-
+   
+     
+   
         </>
     )
 }

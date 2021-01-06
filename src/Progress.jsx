@@ -1,23 +1,49 @@
 import React from 'react'
+import { Slide } from 'react-reveal';
+import pic from './img/p.jpg'
+import './index.css'
 
 
-const Progress=()=>{
-    return(
+
+
+
+const Progress = () => {
+    return (
         <>
-         <div className="container  my-5">
-                        <div className="row">
-                            <div className="col-md">
-                            </div>
-                        </div>
-                        <figure className="figureimg">
-                            <img src="" className="myimg" alt="IMG"/>
-                            {/* <a href="#progress" target="_sh"> <button
-                                className="cv-btn  Knowme-btn">K</button></a> 
-                                 <a href="#porfolio"> <button className="work-btn ">MY WORK</button></a>  */}
-                        
-                        </figure>
+            <div className="progress">
+                <Slide left>
+                    <div className="picture_section">
+                        <img className='picture' src={pic} alt="MyImg" />
                     </div>
-                    
+                </Slide>
+                <Slide right>
+                    <div className="myself">
+                        <h5 >I am an 18 year old boy from KARACHI ,PK . Trying to persue programming as a profession
+                                with a keen interest in <b> Web developement</b>. I am currently in Intermediate
+                                (Science). I like to solve real world problems by transforming my <b>code</b> into
+                                something helpful.
+                             
+                                <br/>
+                                adas
+                                <br/>
+                                asdad
+                                <br/>
+                                asdsad
+                                <br/>
+                                asdsad
+                                <br/>
+                                <br/>
+
+
+
+                              
+                        </h5>
+                    </div>
+                </Slide>
+            </div>
+           
+            
+
         </>
     )
 }
