@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    margin: 0px; padding: 0px;
+    margin: 0%; padding: 0%;
+
  
 }
 
@@ -38,8 +39,10 @@ html{
     position: fixed;
     /* margin-top: -12%; */
     width: 100%;
-    margin-top: -12%;
-    background-color:transparent;
+    margin-top: -14%;
+    background-color:white;
+    height: 3%;
+    padding: 4%;
     z-index: 44;
 
 }
@@ -50,7 +53,9 @@ html{
     flex-direction: row;
 
 }
-.navbar li{
+.li{
+    text-decoration: none;
+    color: black;
     flex-direction: row;
     list-style: none;
     font-size: 1.2rem;
@@ -146,6 +151,7 @@ transition: all .5s ease;
             border-right:2px solid black;
         } 
         100%{
+            visibility: hidden;
             border-right: none;
         }
         
@@ -234,7 +240,8 @@ transition: all .5s ease;
     color: rgb(255, 255, 255);
     background-color:#343b46;
     transform: skew(90deg) ;
-    /* box-shadow:20px 20px 10px grey; */
+    font-family: 'Audiowide', cursive;
+
 
     animation-name: progressection;
     animation-duration: 2s;
@@ -262,9 +269,7 @@ transition: all .5s ease;
     90%{
         opacity: .5;
         transform: scale(.5);
-        /* margin-left: 400%; */
         transform: skew(180deg);
-        /* margin-left: 400px; */
         transition: all .5s ease;
     
     }       
@@ -293,9 +298,8 @@ h4 {
    
 }
  h5{
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.8rem;
     font-weight: bold;
    
 }
@@ -309,6 +313,16 @@ h4 {
     margin-left: 7%;
 }
 .myself{
-    margin-top: -44%;
+    margin-top: -45%;
     margin-left: 40%;
+    padding-bottom: 50px;
+    /* margin-bottom: 40%; */
+}
+.SocialUrls{
+    display: flex;
+}
+.SocialUrls img{
+    height: 5%;
+    width: 5%;
+
 }

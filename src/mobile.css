@@ -1,0 +1,46 @@
+@media only screen and (max-width: 576px){
+    .navbar {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        /* margin-top: -12%; */
+        width: 100%;
+        margin-top: -31%;
+        background-color: white;
+        height: 3%;
+        padding: 4%;
+        padding-bottom: 45px;
+        z-index: 4
+}
+.intro h2 {
+    font-family: 'Audiowide', cursive;
+    /* text-shadow: -22px 18px 9px grey; */
+    font-size: 4.0rem;
+    /* transform: skewX(23deg) skewY(6deg); */
+    transition: all .5s ease;
+    font-weight: bold;
+    margin-top: 11rem;
+    margin-left: 0rem;
+    animation: h2 4s steps(15);
+    overflow: hidden;
+    /* border-right: 2px solid black; */
+    white-space: nowrap;
+}
+h5{padding-left: 80px;
+font-family: 'Audiowide', cursive;
+/* font-family: 'Poppins', sans-serif; */
+font-size: 1.8rem;
+font-weight: bold;
+margin-top: 76%;
+margin-left: -270px;
+}
+
+.anim {
+    display: inline-block;
+    height: 18px;
+    width: 80%;
+    overflow: hidden;
+    color: black;
+    /* background-color: blue; */
+}
+}

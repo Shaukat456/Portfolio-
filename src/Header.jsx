@@ -1,4 +1,6 @@
 import React from 'react'
+import  'react-router-dom'
+import {Switch,Route,NavLink} from 'react-router-dom'
 
 
 
@@ -7,10 +9,10 @@ const Header=()=>{
         <>
     <div className="navbar">
         <ul>
-           <li>ME  </li>
-           <li> PORTFOLIO</li>
-           <li> SKILL </li>
-           <li>CONTACT  </li>
+            <NavLink className='li'  to='/' >Me  </NavLink>
+           <NavLink  className='li' to='/Works' > WORKS </NavLink>
+           <NavLink  className='li' to='/Skill' > SKILLS </NavLink>
+           <NavLink  className='li' to='/Contact' >CONTACT  </NavLink> 
         </ul>
     </div>
     </>
