@@ -10,8 +10,7 @@ const Header=()=>{
     <div className="navbar">
         <ul>
             <NavLink className='li'  to='/' >Me  </NavLink>
-           <NavLink  className='li' to='/Works'  > WORKS </NavLink>
-           <NavLink  className='li' to='/Skill' > SKILLS </NavLink>
+           <NavLink  className='li' to='/Skills' > SKILLS </NavLink>
            <NavLink  className='li' to='/Contact' >CONTACT  </NavLink> 
         </ul>
     </div>

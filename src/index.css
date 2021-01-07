@@ -34,41 +34,25 @@ html{
 /* HEADER COMPONENT */
 
 .navbar{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 66%;
+    display: inline-block;
+    position: static;
+    width: 100%;
     color: black;
     background-color:wheat;
-    height: 3em;
-    overflow: auto;
-    padding-right: 27%;
-    margin-left: 66%;
-    /* margin-right: 2%; */
-    /* padding-left: 4%; */
-    /* padding-top: 4%; */
-    /* padding-left: 20px; */
-    /* margin:  auto ; */
-    
-    /* text-align: center; */
-    /* margin-top: -12%; */
-    /* margin-top: -14%; */
-    /* margin-bottom: 50%; */
-    /* z-index: 1; */
+    overflow:auto;
 
 }
 .navbar ul{
     display: flex;
     justify-content: center;
     overflow: auto;
-
     flex-direction: row;
 
 }
 .li{
     text-decoration: none;
     color: black;
-    flex-direction: row;
+    /* flex-direction: row; */
     list-style: none;
     font-size: 1.2rem;
     /* justify-content: center; */
