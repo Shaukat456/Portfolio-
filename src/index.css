@@ -37,17 +37,18 @@ html{
     display: flex;
     justify-content: center;
     position: fixed;
-    margin:  auto ;
     width: 66%;
     color: black;
     background-color:wheat;
     height: 3em;
+    overflow: auto;
+    padding-right: 27%;
+    margin-left: 66%;
     /* margin-right: 2%; */
     /* padding-left: 4%; */
     /* padding-top: 4%; */
-    margin-left: 66%;
-    padding-right: 27%;
     /* padding-left: 20px; */
+    /* margin:  auto ; */
     
     /* text-align: center; */
     /* margin-top: -12%; */
@@ -59,7 +60,7 @@ html{
 .navbar ul{
     display: flex;
     justify-content: center;
-    
+    overflow: auto;
 
     flex-direction: row;
 
