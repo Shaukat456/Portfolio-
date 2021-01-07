@@ -13,7 +13,6 @@ import Intro from './Intro';
 const Progress = () => {
     return (
         <>
-         <Header/>
             <div className="progress">
                 <Slide left>
                     <div className="picture_section">

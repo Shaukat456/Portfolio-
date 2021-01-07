@@ -1,4 +1,6 @@
 import React from 'react'
+import { Fade } from 'react-bootstrap';
+import { Slide } from 'react-reveal';
 // import linkedImg from './img/linn.png'
 // import GITImg from './img/git.jpg'
 
@@ -14,10 +16,12 @@ const Contact=(props)=>{
 
     <>
     <div className="SocialUrls">
-    <a  href={props.link}>
+    <a  href={props.address} target='_Link'>
         <img src={props.img} alt={props.Address}/>
         </a>
     </div>
+   
+
 
         </>    
     )

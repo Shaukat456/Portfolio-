@@ -22,16 +22,18 @@ const LinkedIn='https://www.linkedin.com/in/shaukat-sohail-012aaa167/';
 const App = () => {
     return (
       <>
+      <Header/>
       <Switch>
       <Route exact path='/' component={Intro}/>
-      {/* <Route exact path='/Intro'  component={Progress}/> */}
     <Route exact path='/Contact'    component={ContactPage}/>
     <Route exact path='/Skills'    component={Progress}/>
 
-      {/* <Route exact path='/Contact' render={Contact}/> */}
+
       </Switch>
 
 
+      {/* <Route exact path='/Intro'  component={Progress}/> */}
+      {/* <Route exact path='/Contact' render={Contact}/> */}
      {/* <Intro/> */}
      {/* <Progress/> */}
       

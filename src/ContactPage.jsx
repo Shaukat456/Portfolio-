@@ -7,6 +7,7 @@ import GITImg from './img/git.jpg'
 import './mobile.css'
 import {Switch,Route} from 'react-router-dom'
 import Header from './Header'
+import { Slide ,Zoom} from 'react-reveal'
 
 
 
@@ -18,16 +19,23 @@ const LinkedIn='https://www.linkedin.com/in/shaukat-sohail-012aaa167/';
 const ContactPage=()=>{
     return(
         <>
-        
-        <Header/>
+        <div className="intro">
+        <h2 > Contact </h2>
+
+        </div>
+        <Slide left>
 <Contact
 img={linkedImg}
 address={LinkedIn}
 />
+</Slide>
+
+<Zoom bottom>
 <Contact
   img={GITImg}
   address={GithubLink}
 />
+</Zoom>
         </>
     )
 }

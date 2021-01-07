@@ -12,6 +12,7 @@ const Header=()=>{
             <NavLink className='li'  to='/' >Me  </NavLink>
            <NavLink  className='li' to='/Skills' > SKILLS </NavLink>
            <NavLink  className='li' to='/Contact' >CONTACT  </NavLink> 
+           
         </ul>
     </div>
     </>

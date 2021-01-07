@@ -38,7 +38,8 @@ html{
     position: static;
     width: 100%;
     color: black;
-    background-color:wheat;
+    font-family: cursive;
+    /* background-color:wheat; */
     overflow:auto;
 
 }
@@ -61,6 +62,7 @@ html{
 .li:nth-child(1){
     position: relative;
     right: 10%;
+    /* color: wheat; */
     /* color: wheat; */
 }
 
@@ -104,7 +106,6 @@ html{
         transform: translateX(0px);
     } 
 }
-
 
 
 
@@ -176,7 +177,7 @@ transition: all .5s ease;
     border-radius: 3px 3px 3px 3px ;
     color: #fff;
     cursor: pointer;
-
+    margin-top: 40%;
     margin-left: 7rem;
   
 
@@ -319,9 +320,11 @@ h4 {
 }
 .SocialUrls{
     display: flex;
+
 }
 .SocialUrls img{
-    height: 5%;
-    width: 5%;
+    height: 4em;
+
+    cursor: pointer;
 
 }
