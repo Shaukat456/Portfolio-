@@ -18,6 +18,7 @@ const LinkedIn='https://www.linkedin.com/in/shaukat-sohail-012aaa167/';
 const ContactPage=()=>{
     return(
         <>
+        
         <Header/>
 <Contact
 img={linkedImg}
@@ -25,7 +26,7 @@ address={LinkedIn}
 />
 <Contact
   img={GITImg}
-address={GithubLink}
+  address={GithubLink}
 />
         </>
     )

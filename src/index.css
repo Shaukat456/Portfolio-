@@ -37,18 +37,29 @@ html{
     display: flex;
     justify-content: center;
     position: fixed;
+    margin:  auto ;
+    width: 66%;
+    color: black;
+    background-color:wheat;
+    height: 3em;
+    /* margin-right: 2%; */
+    /* padding-left: 4%; */
+    /* padding-top: 4%; */
+    margin-left: 66%;
+    padding-right: 27%;
+    /* padding-left: 20px; */
+    
+    /* text-align: center; */
     /* margin-top: -12%; */
-    width: 100%;
-    margin-top: -14%;
-    background-color:white;
-    height: 3%;
-    padding: 4%;
-    z-index: 44;
+    /* margin-top: -14%; */
+    /* margin-bottom: 50%; */
+    /* z-index: 1; */
 
 }
 .navbar ul{
     display: flex;
     justify-content: center;
+    
 
     flex-direction: row;
 
@@ -62,8 +73,10 @@ html{
     /* justify-content: center; */
     margin: 1.4% 4%;
 }
-.navbar li:nth-child(1){
-    margin: 1.4% 10%;
+.li:nth-child(1){
+    position: relative;
+    right: 10%;
+    /* color: wheat; */
 }
 
 
@@ -75,6 +88,7 @@ html{
     overflow: hidden;
     color: black;
     /* background-color: blue; */
+
 }
 .intro p{
     display: inline-block;

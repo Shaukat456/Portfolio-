@@ -23,9 +23,10 @@ const App = () => {
     return (
       <>
       <Switch>
-      <Route exact path='/' render={Intro}/>
-      <Route exact path='/Intro' render={Progress}/>
-      <Route exact path='/Contact' render={ContactPage}/>
+      <Route exact path='/' component={Intro}/>
+      {/* <Route exact path='/Intro'  component={Progress}/> */}
+    <Route exact path='/Contact'    component={ContactPage}/>
+
       {/* <Route exact path='/Contact' render={Contact}/> */}
       </Switch>
 

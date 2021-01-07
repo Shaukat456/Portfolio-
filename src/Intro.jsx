@@ -10,7 +10,7 @@ import {Switch,Route,NavLink} from 'react-router-dom'
 const Intro = () => {
     return (
         <>
-       
+       <Header/>
             <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <div className="container">
@@ -61,12 +61,12 @@ class FadeExample extends React.Component {
         <div>
           <Fade bottom when={this.state.show}>
             <h1>React Reveal</h1>
-          </Fade>
+            </Fade>
           <button
             className="btn btn-success my-5 work-btn"
             type="button"
             onClick={this.handleClick}
-          >
+            >
             { this.state.show ? 'Hide' : 'Show' }
           </button>
         </div>
