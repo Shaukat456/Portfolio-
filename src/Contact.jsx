@@ -15,11 +15,9 @@ const Contact=(props)=>{
     return(
 
     <>
-    <div className="SocialUrls">
     <a  href={props.address} target='_Link'>
         <img src={props.img} alt={props.Address}/>
         </a>
-    </div>
    
 
 

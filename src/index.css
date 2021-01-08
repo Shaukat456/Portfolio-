@@ -320,11 +320,73 @@ h4 {
 }
 .SocialUrls{
     display: flex;
+    justify-content: center;
+
 
 }
 .SocialUrls img{
-    height: 4em;
-
+    height: 4em;  
     cursor: pointer;
 
+}
+.technologies{
+    display: flex;
+    margin-top: 7%;
+    /* justify-content: center; */
+    /* margin-left: 2%; */
+    /* padding: 6%; */
+    padding-top: 2%;
+    background-color: rgb(120, 143, 211);
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-size: 2rem;
+}
+#techno{
+    display:flex;
+    justify-content: center;
+    text-decoration: underline;
+    /* width: 100vw; */
+    margin-top: 14%;
+    font-size: 2.6rem;
+    
+    
+    /* text-align: center; */
+    /* width: 100vw; */
+    /* margin: auto 5px; */
+}
+
+/* .FraLib{} */
+    /* display: inline-block;
+    border: 2px solid wheat;
+    font-family: cursive;
+    padding: 6% 5%;
+}
+.Tools{
+    display: inline-block;
+    border: 2px solid wheat;
+    font-family: cursive;
+
+    background-color: purple;
+padding: 6% 5%;
+}
+.languages{
+    font-family: cursive;
+    display: inline-block;
+    border: 2px solid wheat;
+padding: 6% 5%;
+    background-color: red;
+} */
+.alltechs{
+    font-family: cursive;
+    display: inline-block;
+    /* border: 2px solid wheat; */
+    /* padding: 1%; */
+    /* background-color: whitesmoke; */
+    flex-wrap: wrap;
+    /* margin-top: 5%; */
+    /* padding-right: 10%; */
+    width: 55vw;
+    height: auto;
+    overflow:auto;
+    text-align: center;
 }

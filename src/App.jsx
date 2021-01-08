@@ -36,7 +36,7 @@ const App = () => {
       {/* <Route exact path='/Contact' render={Contact}/> */}
      {/* <Intro/> */}
      {/* <Progress/> */}
-      
+    
 
         </>
     )

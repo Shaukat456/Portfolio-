@@ -20,10 +20,11 @@ const ContactPage=()=>{
     return(
         <>
         <div className="intro">
-        <h2 > Contact </h2>
-
+        <h1> Contact </h1>
         </div>
-        <Slide left>
+
+        <div className="SocialUrls">       
+<Slide left>
 <Contact
 img={linkedImg}
 address={LinkedIn}
@@ -36,7 +37,35 @@ address={LinkedIn}
   address={GithubLink}
 />
 </Zoom>
+   <Slide right>
+<Contact
+img={linkedImg}
+address={LinkedIn}
+/>
+</Slide>
+
+<Zoom bottom>
+<Contact
+  img={GITImg}
+  address={GithubLink}
+/>
+</Zoom>
+   <Slide right>
+<Contact
+img={linkedImg}
+address={LinkedIn}
+/>
+</Slide>
+
+<Zoom bottom>
+<Contact
+  img={GITImg}
+  address={GithubLink}
+/>
+</Zoom>
+        </div>
         </>
+
     )
 }
 
