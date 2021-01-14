@@ -64,6 +64,16 @@ address={LinkedIn}
 />
 </Zoom>
         </div>
+
+        <div className='Cofo'>
+          <h5>Discuss a Project/Say Hi</h5>
+      <form action="/visitors" method='POST'>
+        <input type="text" maxLength="14" required/>
+        <input type="email" maxLength="30" title="Email??"  required />
+        <input type="text" maxLength="40"/>
+        <button type="submit"> SEND</button>
+      </form>
+        </div>
         </>
 
     )

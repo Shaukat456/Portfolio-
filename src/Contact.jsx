@@ -18,7 +18,7 @@ const Contact=(props)=>{
     <a  href={props.address} target='_Link'>
         <img src={props.img} alt={props.Address}/>
         </a>
-   
+       
 
 
         </>    
