@@ -1,3 +1,5 @@
+import Axios from "axios";
+
 const Headings=[
     {
         heading1:"This is heading 1",
