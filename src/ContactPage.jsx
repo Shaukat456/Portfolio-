@@ -43,11 +43,11 @@ address={LinkedIn}
         <div className='Cofo'>
           <h5>Discuss a Project/Say Hi</h5>
       <form action="/visitors" method='POST'>
-        <Zoom>
-        <input type="text" maxLength="14" required/></Zoom>
-       <Zoom> <input type="email" maxLength="30" title="Email??"  required /></Zoom>
-       <Slide left>  <input type="text" maxLength="40"/></Slide>
-       <Slide left>   <button type="submit"> SEND</button> </Slide>
+        
+      <Zoom>  <input type="text" maxLength="14" placeholder='Name'  required/></Zoom>
+       <Slide left> <input type="email" maxLength="30" placeholder='Email' title="Email??"  required /></Slide>
+       <Slide left>  <input type="text" maxLength="40" placeholder='Anything' /></Slide>
+       <button type="submit"><Slide right> SEND  </Slide>  </button>
       </form>
         </div>
         {/* <Footer/> */}

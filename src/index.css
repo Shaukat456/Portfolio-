@@ -298,13 +298,27 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    
+    margin: auto;
+    width: 88%;
+    /* border: 3px solid green; */
+    padding: 34px;
+    text-decoration: none;
+    border-left: 2px solid black;
    
 }
  h5{
     font-family: 'Audiowide', cursive;
     font-size: 1.8rem;
     font-weight: bold;
+    margin: auto;
+    /* width: 10%; */
+    /* border: 3px solid green; */
+    padding: 34px;
+    text-decoration: none;
+    /* border-right: 2px solid black; */
+    border-left: 2px solid black;
+
+
    
 }
 .progress{

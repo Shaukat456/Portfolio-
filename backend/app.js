@@ -5,7 +5,7 @@ const path=require('path')
 
 // path.join(__dirname,'')
 
-app.post('/',async (req,res)=>{
+app.post('/visitors',async (req,res)=>{
     // const visitor=await 
 })
 

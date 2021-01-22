@@ -10,7 +10,7 @@ const Headings=[
     {
         heading1:"HEADING NO 2  ",
         heading2:"HEADING NO 2 ",
-        heading3:"THEADING NO 2"
+        heading3:"HEADING NO 2"
         
     },
     {
