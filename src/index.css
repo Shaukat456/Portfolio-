@@ -56,6 +56,10 @@ html{
     /* flex-direction: row; */
     list-style: none;
     font-size: 1.2rem;
+    /* border-right: 1px solid black; */
+    /* border-left: 1px solid black; */
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid rgb(180, 175, 175);
     /* justify-content: center; */
     margin: 1.4% 4%;
 }
@@ -86,7 +90,7 @@ html{
     font-size: 1.7rem;
     /* transform: skewX(21deg) skewY(4deg); */
      /* text-shadow:-22px 18px 6px grey;  */
- margin-left: 15rem;
+    margin-left: 13rem;
 
 }
 @keyframes rotae{
@@ -375,9 +379,9 @@ padding: 6% 5%;
 padding: 6% 5%;
     background-color: red;
 } */
-.alltechs,.intro {
+.alltechs{
     font-family: cursive;
-    display: inline-block;
+    display: block;
     /* border: 2px solid wheat; */
     /* padding: 1%; */
     /* background-color: whitesmoke; */
@@ -403,9 +407,19 @@ input , button{
     padding: 1%;
     font-family: monospace;
     font-size: 1.2em;
-    transition: all .5s ease;
+    transition: all 1s ease 2s;
 
     
+}
+h1{
+    display:block ;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    /* padding: 1%; */
+    font-family: monospace;
+    /* font-size: 1.2em; */
+    transition: all 1s ease 2s;
 }
 button:hover{
     width: 10%;

@@ -59,7 +59,6 @@ const Progress = () => {
                             </div>
                 </Slide>
             </div>
-         
             
 
         </>

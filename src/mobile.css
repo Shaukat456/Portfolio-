@@ -37,10 +37,25 @@ margin-left: -270px;
 
 .anim {
     display: inline-block;
-    height: 18px;
-    width: 80%;
+    height: 24px;
+    width: 100%;
     overflow: hidden;
     color: black;
+    margin-left: -200px;
     /* background-color: blue; */
 }
+.intro p{
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    /* transform: skewX(21deg) skewY(4deg); */
+    /* text-shadow: -22px 18px 6px grey; */
+    margin-left: 12.5rem;
+    width: 144%;
+}
+}
+
+
+@media only screen and (max-width: 1144px){
+    
 }
