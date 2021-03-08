@@ -1,4 +1,6 @@
 const mongoose=require('mongoose')
 
 
-mongoose.model('')
+const VisitorSchema=mongoose.Schema({
+    
+})

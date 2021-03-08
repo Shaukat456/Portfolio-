@@ -73,11 +73,14 @@ html{
 
 /* Intro  */
  .anim{
+     position: relative;
     display: inline-block;
     height:34px;
-    width: 53%;
+    width: 84%;
     overflow: hidden;
     color: black;
+    /* background-color: royalblue; */
+    text-align: center;
     /* background-color: blue; */
 
 }
@@ -91,6 +94,7 @@ html{
     /* transform: skewX(21deg) skewY(4deg); */
      /* text-shadow:-22px 18px 6px grey;  */
     margin-left: 13rem;
+   
 
 }
 @keyframes rotae{
@@ -114,6 +118,8 @@ html{
 
 
 .intro h2 {
+    display: flex;
+    justify-content: center;
      font-family: 'Audiowide', cursive;
   /* text-shadow:-22px 18px 9px grey; */
         font-size: 4.3rem;
@@ -121,11 +127,11 @@ html{
 transition: all .5s ease;
     font-weight: bold;
     margin-top: 11rem;
-    margin-left: 11rem; 
+    /* margin-left: 11rem;  */
     /* animation-name: h2;
     animation-iteration-count: 1;
     animation-duration: 2s; */
-    animation: h2 4s steps(15);
+    animation: h2 4s steps(40);
     overflow: hidden;
     /* border-right: 2px solid black; */
     white-space: nowrap;
@@ -136,9 +142,11 @@ transition: all .5s ease;
             opacity: .1;
             transform: scale(1.7) skewX(70deg) skewY(79deg) ;
             transition: all .5s ease; */
-            transition: all 4s ease; 
+            transition: all .4s ease; 
             width: 0ch;
          border-right: 2px solid black;
+         display: flex;
+         justify-content: center;
 
         }       
         /* 100%{
@@ -148,18 +156,26 @@ transition: all .5s ease;
             
             /* }  */
             99%{
-                width: 14ch;
+                width: 20ch;
             opacity: 1;
             /* transform: scale(1)  skewX(23deg) skewY(6deg); */
             transition: all 4s ease; 
             border-right:2px solid black;
+            display: flex;
+            justify-content: center;
         } 
         100%{
             visibility: hidden;
+            transition: all 4s ease; 
+
             border-right: none;
+            display: flex;
+            justify-content: center;
+
         }
         
      }
+    
 
 
 .intro p {
