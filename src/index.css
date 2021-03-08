@@ -34,15 +34,28 @@ html{
 /* HEADER COMPONENT */
 
 .navbar{
-    display: inline-block;
-    position: static;
-    width: 100%;
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    color: wheat;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */   
+    /* position: fixed;
+    height: auto;
+    top: 0%;
+    
+    /* display: inline-block; */
+    /* width: 100%;
     color: black;
     font-family: cursive;
     /* background-color:wheat; */
-    overflow:auto;
+    overflow:auto; 
 
 }
+.navbar ul li a :hover{
+    color: wheat;
+}
+
 .navbar ul{
     display: flex;
     justify-content: center;
@@ -56,12 +69,27 @@ html{
     /* flex-direction: row; */
     list-style: none;
     font-size: 1.2rem;
-    /* border-right: 1px solid black; */
+    /* border-right: 16px solid black; */
     /* border-left: 1px solid black; */
-    border-top: 2px solid whitesmoke;
-    border-bottom: 2px solid rgb(180, 175, 175);
+    /* border-top: 2px solid whitesmoke; */
+    /* border-bottom: 2px solid rgb(180, 175, 175); */
     /* justify-content: center; */
     margin: 1.4% 4%;
+    color: wheat;
+    animation: nav .5s ease 0s 1 ;
+
+}
+@keyframes nav{
+    from{
+    border-bottom: 2px solid rgb(180, 175, 175);
+        transition: .5s ease;
+    }   
+    to{
+        border-bottom: 12px solid rgb(180, 175, 175);
+        transition: .5s ease;
+
+    }
+
 }
 .li:nth-child(1){
     position: relative;
