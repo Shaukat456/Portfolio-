@@ -1,61 +1,119 @@
 @media only screen and (max-width: 576px){
-    .navbar {
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        /* margin-top: -12%; */
-        width: 100%;
-        margin-top: -31%;
-        background-color: white;
-        height: 3%;
-        padding: 4%;
-        padding-bottom: 45px;
-        z-index: 4
-}
-.intro h2 {
-    font-family: 'Audiowide', cursive;
-    /* text-shadow: -22px 18px 9px grey; */
-    font-size: 4.0rem;
+ .navbar,.navbar ul  {
+     display: flex;
+     flex-direction: column;
+     height: 100px;
+     justify-content: center;
+     text-align: center;
+ }
+ .navbar ul{
+     height: 100%;
+     margin-top: 0%;
+ }
+ .intro h2 {
+    display: flex;
+    justify-content: center;
+     font-family: 'Audiowide', cursive;
+  /* text-shadow:-22px 18px 9px grey; */
+        font-size: 2.3rem;
     /* transform: skewX(23deg) skewY(6deg); */
-    transition: all .5s ease;
+transition: all .5s ease;
     font-weight: bold;
     margin-top: 11rem;
-    margin-left: 0rem;
-    animation: h2 4s steps(15);
+    color: white;
+    /* margin-left: 11rem;  */
+    /* animation-name: h2;
+    animation-iteration-count: 1;
+    animation-duration: 2s; */
+    animation: h2 4s steps(40);
     overflow: hidden;
     /* border-right: 2px solid black; */
     white-space: nowrap;
-}
-h5{padding-left: 80px;
-font-family: 'Audiowide', cursive;
-/* font-family: 'Poppins', sans-serif; */
-font-size: 1.8rem;
-font-weight: bold;
-margin-top: 76%;
-margin-left: -270px;
-}
+} 
+     @keyframes h2 {
+        0%,67%{ 
+        
+            transition: all .4s ease; 
+            width: 0ch;
+         border-right: 2px solid white;
+         display: flex;
+         justify-content: center;
 
-.anim {
-    display: inline-block;
-    height: 24px;
-    width: 100%;
-    overflow: hidden;
-    color: black;
-    margin-left: -200px;
-    /* background-color: blue; */
-}
-.intro p{
-    text-decoration: underline;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.7rem;
-    /* transform: skewX(21deg) skewY(4deg); */
-    /* text-shadow: -22px 18px 6px grey; */
-    margin-left: 12.5rem;
-    width: 144%;
-}
-}
+        }       
+            99%{
+                width: 14.8ch;
+            opacity: 1;
+            /* transform: scale(1)  skewX(23deg) skewY(6deg); */
+            transition: all 4s ease; 
+            border-right:2px solid black;
+            /* display: flex;
+            justify-content: center; */
+        } 
+        100%{
+            visibility: hidden;
+            transition: all 4s ease; 
+            border-right: none;
+            /* display: flex; */
+            justify-content: center;
 
-
-@media only screen and (max-width: 623px){
+        }
+        
+     }
+     .li:nth-child(1) {
+        position: relative;
+        bottom: 4%;
+        right: 0;
+        /* color: wheat; */
+        /* color: wheat; */
+    }
+    .intro p{
+        display: inline-block;
+        animation: rotae 5s infinite;
+        /* margin-left: 200px; */
+        text-decoration: wavy;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        /* transform: skewX(21deg) skewY(4deg); */
+         /* text-shadow:-22px 18px 6px grey;  */
+        margin-left: 13rem;
+        height: 30px;
     
-}
+    }
+    @keyframes rotae{
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-35px);
+        }
+        50%{
+            transform: translateY(-68px);
+        }
+        75%{
+            transform: translateY(140px);
+        }
+        100%{
+            transform: translateX(0px);
+        } 
+    }
+    .anim {
+        position: relative;
+        display: inline-block;
+        height: 34px;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+        padding: 0px;
+        /* margin-right: 5%; */
+        /* background-color: royalblue; */
+        text-align: center;
+        /* background-color: blue; */
+    }
+    /* .anim{
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+    /* } */ 
+ }   
+
+

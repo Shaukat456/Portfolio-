@@ -17,7 +17,7 @@ const Intro = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <div className="container">
                         <section className="about-me" id='aboutt'>
-                            <div className="intro mx-auto">
+                            <div className="intro">
                                 <h2>Shaukat Sohail</h2>
                                 <div className="anim">
                                     <p>Mern Stack Developer</p> <br />

@@ -62,6 +62,8 @@ body::before{
     /* background-color:wheat; */
     overflow:auto; 
     z-index:50;
+    flex-wrap: wrap;
+    /* flex-shrink: ; */
 }
 .navbar ul li a :hover{
     color: wheat;
@@ -87,7 +89,7 @@ body::before{
     /* justify-content: center; */
     margin: 1.4% 4%;
     color: wheat;
-    animation: nav .5s ease 0s 1 ;
+    /* animation: nav .5s ease 0s 1 ; */
 
 }
 @keyframes nav{
@@ -133,7 +135,7 @@ body::before{
     /* transform: skewX(21deg) skewY(4deg); */
      /* text-shadow:-22px 18px 6px grey;  */
     margin-left: 13rem;
-   
+   animation-name: rotae;
 
 }
 @keyframes rotae{
