@@ -26,7 +26,7 @@ const Intro = () => {
 
                                     <p>React Developer</p><br />
                                 </div>
-                                <a href="./Resume/Resume.pdf" target="_sh"> <Slide right> <button
+                                <a href="#" target="_sh"> <Slide right> <button
                                     className="cv-btn">RESUME 
                                     </button></Slide></a>
                                 {/* <NavLink to=""> <button className="work-btn">

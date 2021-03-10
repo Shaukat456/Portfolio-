@@ -30,12 +30,23 @@
 html{
     scroll-behavior: smooth;
 }
+body::before{
+    content: '';
+    position: absolute; 
+    background: url('./img/bg.jpg') no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: -13;
+}
 
 /* HEADER COMPONENT */
 
 .navbar{
-    background-color: #333; /* Black background color */
+    /* background-color:#202c49; */
     position: fixed; /* Make it stick/fixed */
+    background: url('./img/bg.jpg') no-repeat center/cover;
+
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     color: wheat;
@@ -50,7 +61,7 @@ html{
     font-family: cursive;
     /* background-color:wheat; */
     overflow:auto; 
-
+    z-index:50;
 }
 .navbar ul li a :hover{
     color: wheat;
@@ -106,7 +117,7 @@ html{
     height:34px;
     width: 84%;
     overflow: hidden;
-    color: black;
+    color:white;
     /* background-color: royalblue; */
     text-align: center;
     /* background-color: blue; */
@@ -155,6 +166,7 @@ html{
 transition: all .5s ease;
     font-weight: bold;
     margin-top: 11rem;
+    color: white;
     /* margin-left: 11rem;  */
     /* animation-name: h2;
     animation-iteration-count: 1;
@@ -172,7 +184,7 @@ transition: all .5s ease;
             transition: all .5s ease; */
             transition: all .4s ease; 
             width: 0ch;
-         border-right: 2px solid black;
+         border-right: 2px solid white;
          display: flex;
          justify-content: center;
 
@@ -284,11 +296,13 @@ transition: all .5s ease;
 
 /* Progress section */
 .progress-section {
+    position: relative;
     margin-top: 8rem;
     color: rgb(255, 255, 255);
     background-color:#343b46;
     transform: skew(90deg) ;
     font-family: 'Audiowide', cursive;
+    background: url('./img/bg.jpg') no-repeat center/cover;
 
 
     animation-name: progressection;
@@ -334,9 +348,22 @@ transition: all .5s ease;
 }
 .progress {
     height:0.4rem!important;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     margin-bottom: 1rem;
+    color: white;
     background-color: #000;
+    /* background: url('./img/bg.jpg') no-repeat center/cover; */
+
+
+}
+.progress::before{
+    content: '';
+    position: absolute; 
+    /* top: 500px; */
+    background: url('./img/bg.jpg') no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -13;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
@@ -360,16 +387,21 @@ h4 {
     padding: 34px;
     text-decoration: none;
     /* border-right: 2px solid black; */
-    border-left: 2px solid black;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 
 
    
 }
-.progress{
-    /* display: inline; */
+/* .progress{
+    display: inline;
     margin-top: 4%;
     background-color: transparent;
-        }
+        } */
 .picture{
     height: 35rem;
     margin-left: 7%;

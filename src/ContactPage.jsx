@@ -9,6 +9,7 @@ import {Switch,Route} from 'react-router-dom'
 import Header from './Header'
 import { Slide ,Zoom} from 'react-reveal'
 import Footer from './Footer'
+import Axios from 'axios'
 
 
 const GithubLink='https://github.com/Shaukat456';
@@ -42,17 +43,18 @@ address={LinkedIn}
         
 
 
-        {/* <div className='Cofo'>
+         <div className='Cofo'>
           <h5>Discuss a Project/Say Hi</h5>
-      <form action="/visitors" method='POST'> */}
-        
-      {/* <Zoom>  <input type="text" maxLength="14" placeholder='Name'  required/></Zoom>
-       <Slide left> <input type="email" maxLength="30" placeholder='Email' title="Email??"  required /></Slide>
-       <Slide left>  <input type="text" maxLength="40" placeholder='Anything' /></Slide>
+      <form action="/visitors" method='POST'> 
+      
+       
+      <Zoom>  <input type="text" maxLength="14" placeholder='Name' name='name'  required/></Zoom>
+       <Slide left> <input type="email" maxLength="30" name='email'  placeholder='Email' title="Email??"  required /></Slide>
+       <Slide left>  <input type="text" maxLength="40" name='pdis'  placeholder='Anything' /></Slide>
        <button type="submit"><Slide right> SEND  </Slide>  </button>
       </form>
-        </div> */}
-        {/* <Footer/> */}
+        </div>
+        <Footer/>
         </>
     )
 }
