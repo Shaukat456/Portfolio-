@@ -47,11 +47,13 @@ address={LinkedIn}
           <h5>Discuss a Project/Say Hi</h5>
       <form action="/visitors" method='POST'> 
       
-       
+      
       <Zoom>  <input type="text" maxLength="14" placeholder='Name' name='name'  required/></Zoom>
        <Slide left> <input type="email" maxLength="30" name='email'  placeholder='Email' title="Email??"  required /></Slide>
        <Slide left>  <input type="text" maxLength="40" name='pdis'  placeholder='Anything' /></Slide>
        <button type="submit"><Slide right> SEND  </Slide>  </button>
+      
+      
       </form>
         </div>
         <Footer/>

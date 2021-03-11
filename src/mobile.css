@@ -31,7 +31,7 @@ transition: all .5s ease;
     white-space: nowrap;
 } 
      @keyframes h2 {
-        0%,67%{ 
+        0%,70%{ 
         
             transition: all .4s ease; 
             width: 0ch;
@@ -41,7 +41,7 @@ transition: all .5s ease;
 
         }       
             99%{
-                width: 14.8ch;
+                width: 13ch;
             opacity: 1;
             /* transform: scale(1)  skewX(23deg) skewY(6deg); */
             transition: all 4s ease; 
@@ -108,6 +108,27 @@ transition: all .5s ease;
         /* background-color: royalblue; */
         text-align: center;
         /* background-color: blue; */
+    }
+    .progress {
+        display: flex;
+        position: relative;
+        top: 40%;
+        font-size: 1.1em;
+        margin-top: 60%;
+        text-align: center;
+        /* top: 5em; */
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        /* margin-left: 0; */
+    }
+     .picture{
+        height: 50%;
+        display: block;
+        margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
     }
     /* .anim{
         display: flex;
