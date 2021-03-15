@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import Contact from './Contact'
 import './mobile.css'
 import Contact from './Contact'
@@ -17,14 +17,21 @@ const LinkedIn='https://www.linkedin.com/in/shaukat-sohail-012aaa167/';
 
 
 
+
 const ContactPage=()=>{
-    return(
+  
+  return(
         <>
-        <div className="intro">
-        <h1 > FIND ME HERE </h1>
-        </div>
-        <div className="SocialUrls">       
-<Slide left>
+      
+
+      
+
+
+        {/* <div className="intro"> */}
+        {/* <h1 > FIND ME HERE </h1> */}
+        {/* </div> */}
+        {/* <div className="SocialUrls">        */}
+{/* <Slide left>
 <Contact
 img={linkedImg}
 address={LinkedIn}
@@ -37,11 +44,11 @@ address={LinkedIn}
   address={GithubLink}
 />
 </Zoom>
-  
+   */}
 
-        </div>
+        {/* </div> */}
         
-
+{/* 
 
          <div className='Cofo'>
           <h5>Discuss a Project/Say Hi</h5>
@@ -56,7 +63,8 @@ address={LinkedIn}
       
       </form>
         </div>
-        <Footer/>
+        <Footer/> */}
+        
         </>
     )
 }

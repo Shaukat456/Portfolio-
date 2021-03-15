@@ -33,7 +33,7 @@ html{
 body::before{
     content: '';
     position: absolute; 
-    background: url('./img/bg.jpg') no-repeat center/cover;
+    /* background: url('./img/bg.jpg') no-repeat center/cover; */
     height: 100vh;
     width: 100%;
     top: 0;
@@ -45,7 +45,7 @@ body::before{
 .navbar{
     /* background-color:#202c49; */
     position: fixed; /* Make it stick/fixed */
-    background: url('./img/bg.jpg') no-repeat center/cover;
+    /* background: url('./img/bg.jpg') no-repeat center/cover; */
 
     top: 0; /* Stay on top */
     width: 100%; /* Full width */

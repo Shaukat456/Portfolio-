@@ -20,9 +20,10 @@ window.onscroll = function() {
         <>
     <div className="navbar"  id='navbar'>
         <ul>
-            <NavLink className='li'  to='/' >Me  </NavLink>
+            {/* <NavLink className='li'  to='/' >Me  </NavLink>
            <NavLink  className='li' to='/Skills' > SKILLS </NavLink>
            <NavLink  className='li' to='/Contact' >CONTACT  </NavLink> 
+           <NavLink  className='li' to='/C' >C  </NavLink>  */}
            
         </ul>
     </div>

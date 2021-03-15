@@ -12,6 +12,7 @@ import GITImg from './img/git.jpg'
 import './mobile.css'
 import {Switch,Route} from 'react-router-dom'
 import ContactPage from './ContactPage'
+import C from './C'
 
 
 const GithubLink='https://github.com/Shaukat456';
@@ -27,6 +28,7 @@ const App = () => {
       <Route exact path='/' component={Intro}/>
     <Route exact path='/Contact'    component={ContactPage}/>
     <Route exact path='/Skills'    component={Progress}/>
+    <Route exact path='/C'    component={C}/>
 
 
       </Switch>
