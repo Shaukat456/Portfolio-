@@ -9,10 +9,15 @@ const C=()=>{
 
 
   const newentry=(e)=>{
-      const entry={email:email,password:password}
+      const entry={id:new Date().getTime().toString() , email,password}
       setallEntry([...allentry,entry])
+    //   {email,password}=set
       console.log(allentry);
     e.preventDefault()
+    // setallEntry('')
+    setEmail('')
+    setpassword('')
+
   }
     return(
 <>
@@ -22,7 +27,8 @@ const C=()=>{
     //    value={email}
         name='email'
        onChange={(e)=>setEmail(e.target.value)}
-       />
+      
+     />
    </div>
    <input type="password" 
 //    value={password}
@@ -34,7 +40,7 @@ const C=()=>{
     {allentry.map((cvalue)=>{
         return(
             <>
-       <div>
+       <div key={cvalue.id}>
             <p>{cvalue.email}</p>
         <p>{cvalue.password}</p>
            </div>
