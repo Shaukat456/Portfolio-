@@ -9,20 +9,22 @@ const C=()=>{
 
 
   const newentry=(e)=>{
-      const entry={id:new Date().getTime().toString() , email,password}
+      const entry={id:new Date().toLocaleTimeString() , email,password}
       setallEntry([...allentry,entry])
     //   {email,password}=set
-      console.log(allentry);
+      // console.log(allentry);
     e.preventDefault()
     // setallEntry('')
-    setEmail('')
-    setpassword('')
+    setEmail([])
+    setpassword([])
+    // console.log(entry)
 
   }
     return(
 <>
 <form action="">
    <div>
+     {/* <input type='N /> */}
        <input type="text"
     //    value={email}
         name='email'
@@ -36,16 +38,22 @@ const C=()=>{
    onChange={(e)=>setpassword(e.target.value)}
    />
    <button type="submit" onClick={newentry}>Submit</button>
+   <button onClick={(e)=>{
+          setEmail('')
+          setpassword('')
+          e.preventDefault()
+         }}> Clear all</button>
 </form>
     {allentry.map((cvalue)=>{
         return(
             <>
-       <div key={cvalue.id}>
-            <p>{cvalue.email}</p>
+       <div  key={cvalue.id}>
+         {/* console.log(); */}
+        <p>{cvalue.email}</p>
         <p>{cvalue.password}</p>
+        
            </div>
-           
-
+          
 
 
 
