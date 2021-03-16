@@ -11,13 +11,11 @@ const C=()=>{
   const newentry=(e)=>{
       const entry={id:new Date().toLocaleTimeString() , email,password}
       setallEntry([...allentry,entry])
-    //   {email,password}=set
-      // console.log(allentry);
+
     e.preventDefault()
-    // setallEntry('')
     setEmail([])
     setpassword([])
-    // console.log(entry)
+  
 
   }
     return(
